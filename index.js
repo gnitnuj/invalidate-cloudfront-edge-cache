@@ -3,14 +3,13 @@ const CF = new AWS.CloudFront();
 
 module.exports = (
   distribution,
-  invalidateList = ["/*"],
-  callerReference = new Date().getTime().toString()
+  invalidateList = ["/*"]
 ) => {
   return new Promise((resolve, reject) => {
     const invalidationObject = {
       DistributionId: distribution,
       InvalidationBatch: {
-        CallerReference: callerReference,
+        CallerReference: new Date().getTime().toString(),
         Paths: {
           Quantity: invalidateList.length,
           Items: invalidateList,
