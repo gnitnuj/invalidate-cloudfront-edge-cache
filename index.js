@@ -2,17 +2,17 @@ const AWS = require("aws-sdk");
 const CF = new AWS.CloudFront();
 
 module.exports = (
-  distribution,
-  invalidateList = ["/*"]
+  distributionId,
+  pathsToInvalidate = ["/*"]
 ) => {
   return new Promise((resolve, reject) => {
     const invalidationObject = {
-      DistributionId: distribution,
+      DistributionId: distributionId,
       InvalidationBatch: {
         CallerReference: new Date().getTime().toString(),
         Paths: {
-          Quantity: invalidateList.length,
-          Items: invalidateList,
+          Quantity: pathsToInvalidate.length,
+          Items: pathsToInvalidate,
         },
       },
     };
