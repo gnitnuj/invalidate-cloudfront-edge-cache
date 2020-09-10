@@ -1,0 +1,19 @@
+{
+  "name": "invalidate-cloudfront-edge-cache",
+  "version": "1.0.0",
+  "description": "simple function to invalidate cloudfront cache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnitnuj/invalidate-cloudfront-edge-cache.git"
+  },
+  "author": "gnitnuj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gnitnuj/invalidate-cloudfront-edge-cache/issues"
+  },
+  "homepage": "https://github.com/gnitnuj/invalidate-cloudfront-edge-cache#readme"
+}
