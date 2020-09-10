@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gnitnuj/invalidate-cloudfront-edge-cache/issues"
   },
-  "homepage": "https://github.com/gnitnuj/invalidate-cloudfront-edge-cache#readme"
+  "homepage": "https://github.com/gnitnuj/invalidate-cloudfront-edge-cache#readme",
+  "dependencies": {
+    "aws-sdk": "^2.749.0"
+  }
 }
